@@ -67,7 +67,7 @@ variables:
   color: !input color
   off_color: 255 # White
   speed_range: "{{ max_speed - min_speed }}"
-  led_range: 7
+  led_range: 6
   leds_to_turn_on: "{{ (speed - min_speed) / speed_range * led_range | round(0) | int }}"
 
 trigger:
